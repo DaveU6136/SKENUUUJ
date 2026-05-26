@@ -2,22 +2,42 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>SKENUUUUUUUUJ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SKENUUUUUUJ</title>
+
   <style>
     body{
+      margin:0;
+      height:100vh;
+
       display:flex;
       justify-content:center;
       align-items:center;
-      height:100vh;
-      margin:0;
-      font-size:60px;
-      font-family:Arial;
+
       background:black;
       color:white;
+
+      font-family:Arial, sans-serif;
+    }
+
+    .text{
+      width:80%;
+
+      text-align:center;
+      word-wrap:break-word;
+
+      /* Automatická velikost podle zařízení */
+      font-size:clamp(28px, 8vw, 80px);
+
+      line-height:1.2;
     }
   </style>
 </head>
+
 <body>
-SKENUUUUUUUUUJ!!!
+  <div class="text">
+    SKENUUUUUUUJ!!!
+  </div>
 </body>
 </html>
